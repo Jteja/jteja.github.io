@@ -1,280 +1,171 @@
-# 🚀 Jesmi Kolipaka - Portfolio Website
+# Jesmi Kolipaka - Professional Portfolio
 
-A stunning, terminal-inspired portfolio website showcasing SRE expertise and AI automation projects.
+A clean, professional portfolio website for GitHub Pages.
 
 ## ✨ Features
 
-- **Terminal-Inspired Design**: Unique aesthetic that stands out from generic portfolios
-- **Smooth Animations**: Framer Motion powered transitions
-- **Responsive**: Works perfectly on all devices
-- **Fast**: Built with Next.js 14 and optimized for performance
-- **SEO Optimized**: Proper meta tags for better discoverability
-- **Interactive Resume**: Easy navigation through experience, skills, and projects
-- **Downloadable Resume**: One-click resume download
+- **Simple & Professional** - Clean design that recruiters love
+- **Fast Loading** - Pure HTML/CSS, no complex dependencies
+- **Easy to Edit** - Just edit `index.html` - all content in one file
+- **Mobile Responsive** - Works perfectly on all devices
+- **ATS-Friendly** - Clean structure for search engines
 
-## 🎨 Design Highlights
+## 🚀 Deploy to GitHub Pages (5 Minutes)
 
-- Dark cyberpunk aesthetic with cyan/blue accents
-- Animated grid background
-- Glass morphism effects
-- Terminal-style command prompts
-- Smooth page transitions
-- Hover effects and micro-interactions
+### Quick Start
 
-## 🛠️ Tech Stack
-
-- **Framework**: Next.js 14 (React 18)
-- **Styling**: Tailwind CSS
-- **Animations**: Framer Motion
-- **Language**: TypeScript
-- **Hosting**: GitHub Pages (100% FREE)
-
-## 📦 Local Development
-
-1. **Install dependencies**:
-   ```bash
-   npm install
-   ```
-
-2. **Your resume is already included**:
-   - Located at `public/Jesmi_Kolipaka_Resume.docx`
-
-3. **Run development server**:
-   ```bash
-   npm run dev
-   ```
-
-4. **Open browser**:
-   Visit `http://localhost:3000`
-
-## 🚀 Deploy to GitHub Pages (100% FREE)
-
-### Quick Start (10 Minutes)
-
-1. **Create GitHub Account**:
+1. **Create GitHub Repository**
    - Go to https://github.com
-   - Sign up (suggested username: `jesmi-kolipaka`)
-
-2. **Create Repository**:
-   - Repository name: `jesmi-kolipaka.github.io` (use YOUR username)
+   - Create new repository named: `jesmi-kolipaka.github.io`
    - Make it **Public**
-   - Initialize with README
 
-3. **Push Your Code**:
+2. **Upload Files**
    ```bash
+   cd simple-portfolio
    git init
    git add .
    git commit -m "Initial portfolio"
    git branch -M main
-   git remote add origin https://github.com/YOUR-USERNAME/YOUR-USERNAME.github.io.git
+   git remote add origin https://github.com/jesmi-kolipaka/jesmi-kolipaka.github.io.git
    git push -u origin main
    ```
 
-4. **Enable GitHub Pages**:
-   - Go to repository Settings → Pages
-   - Source: **GitHub Actions**
-   - ✅ Site deploys automatically!
+3. **Enable Pages**
+   - Settings → Pages
+   - Source: **Deploy from a branch**
+   - Branch: **main** / **root**
+   - Save
 
-5. **Visit Your Site**:
-   - URL: `https://YOUR-USERNAME.github.io`
-   - Deployment takes ~2-5 minutes
-   - 🎉 Your portfolio is LIVE!
+4. **Visit Your Site**
+   - `https://jesmi-kolipaka.github.io`
+   - Live in 1-2 minutes!
 
-### Custom Domain (Optional - $12/year)
+## ✏️ How to Edit Your Portfolio
 
-1. **Buy domain** from Namecheap/Porkbun/Google Domains
-2. **In GitHub**: Settings → Pages → Add custom domain
-3. **In Domain Registrar**: Add these DNS records:
-   ```
-   Type    Name    Value
-   A       @       185.199.108.153
-   A       @       185.199.109.153
-   A       @       185.199.110.153
-   A       @       185.199.111.153
-   CNAME   www     YOUR-USERNAME.github.io
-   ```
-4. **Wait 30-60 minutes** for DNS propagation
-5. ✅ Your site is now at your custom domain!
+Everything is in `index.html`. Just search and replace:
 
-## 💰 Cost Breakdown
+### Update Your Name & Contact
+```html
+<h1>Jesmi Kolipaka</h1>  <!-- Change your name here -->
+<span>📧 <a href="mailto:jesmiteja17@gmail.com">jesmiteja17@gmail.com</a></span>
+```
 
-| Service | Cost | What You Get |
-|---------|------|--------------|
-| GitHub Pages Hosting | **FREE** | Unlimited bandwidth, Auto SSL, Global CDN |
-| Custom Domain (optional) | $12/year | Professional look (yourname.com) |
-| **Total** | **$0-12/year** | Professional portfolio site |
+### Update Work Experience
+Find this section and edit:
+```html
+<div class="company">Mimecast</div>
+<div class="role">Site Reliability Engineer II</div>
+<div class="period">Feb 2023 – May 2025</div>
+<ul>
+    <li>Your achievement here</li>
+</ul>
+```
 
-## 🔄 How to Update Your Portfolio
+### Update Skills
+Find `.skill-category` sections and edit:
+```html
+<div class="skill-category">
+    <h4>Your Skill Category</h4>
+    <p>Your technologies here</p>
+</div>
+```
 
-Once deployed, updating is easy:
+### Update Projects
+Find `.project` sections and edit:
+```html
+<div class="project">
+    <h4>Project Name</h4>
+    <div class="tech-tags">
+        <span class="tech-tag">Technology</span>
+    </div>
+    <ul>
+        <li>Project detail</li>
+    </ul>
+</div>
+```
+
+## 🔄 How to Update After Changes
 
 ```bash
-# Make changes to your files
-# Then commit and push
+# Make your edits to index.html
 
+# Commit and push
 git add .
-git commit -m "Updated projects section"
+git commit -m "Updated experience section"
 git push
 
-# GitHub Actions automatically rebuilds and deploys
-# Site updates in ~2-5 minutes!
+# Site updates automatically in 1-2 minutes!
 ```
 
-## 🎯 Sharing Your Portfolio
+## 📄 Add Your Resume PDF
 
-### For LinkedIn:
-- Add to "Featured" section: `https://your-username.github.io`
-- Update profile headline with portfolio link
-- Share as a post announcing your new site
+1. Save your resume as `resume.pdf`
+2. Put it in the same folder as `index.html`
+3. Push to GitHub
+4. The "Download Resume" button will work automatically!
 
-### For Job Applications:
-```
-Email Template:
-Portfolio: https://your-username.github.io
-Resume: [Attached]
+## 🎨 Customize Colors
 
-Application Forms:
-Website: your-username.github.io
-```
+Find these in the `<style>` section:
 
-### For Email Signature:
-```
-Jesmi Kolipaka | Site Reliability Engineer
-Portfolio: https://jesmi-kolipaka.github.io
-GitHub: https://github.com/jesmi-kolipaka
+```css
+/* Primary blue color */
+#3498db
+
+/* Dark text */
+#2c3e50
+
+/* Light gray background */
+#f5f5f5
 ```
 
-## 🔥 Pro Tips
+Replace with your preferred colors!
 
-1. **Star Your Repo**: Makes it easier to find and shows activity
-2. **Add Description**: "Professional SRE Portfolio showcasing DevOps & AI projects"
-3. **Add Topics**: Tags like `portfolio`, `sre`, `devops`, `nextjs`
-4. **Pin Repository**: Pin to your GitHub profile for visibility
-5. **Update Regularly**: Push updates monthly to show active development
-6. **Track Analytics**: Add Google Analytics to monitor visitors
+## 💡 Why This Design?
 
-## 📊 What This Portfolio Shows Recruiters
+✅ **No Build Process** - Just HTML/CSS
+✅ **No Dependencies** - Works instantly
+✅ **Easy to Edit** - One file, plain text
+✅ **Fast Loading** - Lightweight
+✅ **Professional** - Clean, modern design
+✅ **Works Everywhere** - Pure web standards
 
-✅ **Git Proficiency**: You know version control
-✅ **CI/CD Knowledge**: GitHub Actions deployment
-✅ **Modern Stack**: Next.js, React, TypeScript
-✅ **Design Skills**: Professional UI/UX
-✅ **Initiative**: Built something impressive
-✅ **DevOps Skills**: Automated deployment pipeline
-
-**Perfect for SRE roles!**
-
-## 🆘 Troubleshooting
-
-**Problem: Build fails on GitHub**
-```bash
-# Test locally first
-npm install
-npm run build
-
-# If successful, push again
-git push
-```
-
-**Problem: 404 Error after deploy**
-- Wait 5 minutes after first deploy
-- Check "Actions" tab for deployment status
-- Verify Pages is enabled in Settings → Pages
-
-**Problem: Resume won't download**
-- Ensure `Jesmi_Kolipaka_Resume.docx` is in `/public` folder
-- Rebuild and push again
-
-**Problem: Custom domain not working**
-- Wait 24-48 hours for DNS propagation
-- Verify DNS records match GitHub's requirements
-- Enable "Enforce HTTPS" after DNS works
-
-## 📈 Success Metrics
-
-Expected results with GitHub Pages portfolio:
-
-- **50-70%** higher callback rate vs standard resumes
-- **Memorable** - Recruiters will remember you
-- **Shows initiative** - Built something impressive
-- **Demonstrates skills** - Proves you can deliver
-
-## 📚 Customization Guide
-
-### Update Your Information:
-
-Edit `app/page.tsx`:
-
-**Line 18-48**: Your work experience
-**Line 50-82**: Your projects (add jidockwork.com details!)
-**Line 84-92**: Your technical skills
-**Contact section**: Your contact information
-
-### Change Colors:
-
-Search and replace in `app/page.tsx`:
-- `cyan-400` → your preferred color
-- `blue-400` → your secondary color
-- `slate-900` → your background color
-
-### Add New Sections:
-
-1. Add to `sections` object
-2. Create corresponding JSX in `AnimatePresence`
-3. Style with Tailwind classes
-
-## 🎓 Files Included
+## 🌐 Your Portfolio URL
 
 ```
-portfolio/
-├── .github/
-│   └── workflows/
-│       └── deploy.yml          ← GitHub Actions (auto-deploy)
-├── app/
-│   ├── page.tsx                ← Main portfolio page
-│   ├── layout.tsx              ← App layout
-│   └── globals.css             ← Global styles
-├── public/
-│   └── Jesmi_Kolipaka_Resume.docx  ← Your resume
-├── package.json                ← Dependencies
-├── next.config.js              ← Next.js config
-├── tailwind.config.js          ← Tailwind config
-├── tsconfig.json               ← TypeScript config
-├── README.md                   ← This file
-└── GITHUB_PAGES_GUIDE.md       ← Detailed deployment guide
+https://jesmi-kolipaka.github.io
 ```
 
-## 📞 Need Help?
+## 📊 File Structure
 
-- **Detailed Guide**: See `GITHUB_PAGES_GUIDE.md` for step-by-step instructions
-- **GitHub Docs**: https://pages.github.com
-- **Issues**: Create issue on your repository
+```
+simple-portfolio/
+├── index.html     ← Your entire portfolio (edit this!)
+├── resume.pdf     ← Your resume PDF (add this)
+└── README.md      ← This file
+```
 
-## 💡 Why GitHub Pages?
+## ✅ Deployment Checklist
 
-✅ **100% FREE** - No hidden costs ever
-✅ **Unlimited Bandwidth** - No traffic limits
-✅ **Industry Standard** - Most tech portfolios use it
-✅ **Recruiter Recognition** - github.io = real developer
-✅ **Auto Deploy** - Push code, site updates
-✅ **Custom Domains** - Free SSL included
-✅ **Shows Git Skills** - Demonstrates version control proficiency
+- [ ] Edit index.html with your info
+- [ ] Add resume.pdf
+- [ ] Create GitHub repository
+- [ ] Push files
+- [ ] Enable GitHub Pages
+- [ ] Visit your site
+- [ ] Share on LinkedIn!
 
 ## 🎯 Next Steps
 
-1. **Deploy** (10 minutes)
-2. **Test** on mobile and desktop
-3. **Share** on LinkedIn
-4. **Update** resume with portfolio URL
-5. **Apply** to jobs with your new portfolio
-6. **Track** results and iterate
+1. **Edit `index.html`** with your information
+2. **Test locally** by opening index.html in browser
+3. **Deploy to GitHub Pages**
+4. **Add to LinkedIn** profile
+5. **Update resume** with portfolio URL
+6. **Share with network**
 
 ---
 
-**Built with 💙 by Jesmi Kolipaka**
+**Your Portfolio URL:** `https://jesmi-kolipaka.github.io`
 
-*Transforming infrastructure into art, one deployment at a time.*
-
-**Your Portfolio URL:** `https://your-username.github.io`
-
-Deploy now and stand out from the crowd! 🚀
+Simple. Professional. Effective. 🚀
